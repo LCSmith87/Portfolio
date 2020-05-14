@@ -1,11 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
+import NavBar from '../NavBar'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, handleToggle }) => {
     return (
-        <div>
-            {children}
+        <div className="container">
+            <NavBar handleToggle={handleToggle} />
+            <div className="main">
+                {children}
+            </div>
         </div>
     )
 }

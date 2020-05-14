@@ -1,18 +1,31 @@
-import React from 'react'
-import App from 'next/app'
+import React, { useState } from 'react'
 import Layout from '../components/Layout'
+import { darkTheme, lightTheme } from '../utils/theme/theme'
+import { ThemeProvider } from 'styled-components';
 import '../css/global.css'
 
-class MyApp extends App {
-    render() {
-        const { Component, pageProps } = this.props
-        return(
-            <Layout>
+
+
+function App(props) {
+    const [theme, setTheme] = useState('dark')
+    const { Component, pageProps } = props
+
+    const handleThemeToggle = () => {
+        if (theme === 'dark') {
+            setTheme('light')
+        } else {
+            setTheme('dark')
+        }
+    }
+
+    return(
+        <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
+            <Layout handleToggle={handleThemeToggle}>
                 <Component {...pageProps} />
             </Layout>
-        )
-    }
+        </ThemeProvider>
+    )
   }
 
 
-  export default MyApp
+  export default App
