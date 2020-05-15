@@ -27,6 +27,6 @@ const Nav = styled.div`
         width: 60px;
         height: 100vh;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 `

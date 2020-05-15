@@ -6,7 +6,8 @@ export const darkTheme = {
     red: '#da0a0a',
     button: '#fffffa',
     buttonShadow: '#bcbcbc',
-    icon: '#fffffa'
+    icon: '#fffffa',
+    iconPath: '/img/icons/moon.png'
 
 }
 
@@ -18,5 +19,6 @@ export const lightTheme = {
     red: '#da0a0a',
     button: '#33373b',
     buttonShadow: '#1d2125',
-    icon: '#fffffa'
+    icon: '#fffffa',
+    iconPath: '/img/icons/sun.png'
 }
