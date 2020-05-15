@@ -28,5 +28,8 @@ export default withTheme(ModeToggle)
 const Icon = styled.img`
     width: 100%;
     height: 100%;
+    @media (min-width: 640px) {
+        padding-top: 15px;
+    }
 `
 

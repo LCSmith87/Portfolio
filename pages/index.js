@@ -1,10 +1,17 @@
+import React from 'react'
 import Head from 'next/head'
 
-export default function Home() {
+
+const Home = () => {
   return (
-      <Head>
-        <title>Levi Smith, Front End Developer</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <React.Fragment>
+        <Head>
+            <title>Levi Smith, Front End Developer</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+      </React.Fragment>
+
   )
 }
+
+export default Home
