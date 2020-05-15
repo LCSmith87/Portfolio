@@ -17,7 +17,6 @@ const NavBar = ({ handleToggle }) => {
 export default NavBar
 
 const Nav = styled.div`
-    /* Temporary styles just to get layout before theme */
     background-color: ${({ theme }) => theme.nav};
     height: 60px;
     display: flex;
@@ -28,5 +27,6 @@ const Nav = styled.div`
         height: 100vh;
         flex-direction: column;
         align-items: center;
+        padding-top: 15px;
     }
 `

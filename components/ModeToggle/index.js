@@ -11,7 +11,7 @@ const ModeToggle = ({ theme }) => {
     })
 
     return (
-        <div onClick={() => set(state => !state)} style={{width: '50px', height: '50px', position: 'relative'}}>
+        <div onClick={() => set(state => !state)} style={{width: '32px', height: '32px', position: 'relative', cursor: 'pointer'}}>
             <animated.div style={{ position: 'absolute', opacity: opacity.interpolate(o => 1 - o), transform }}>
                 <Icon src={theme.iconPath} />
             </animated.div>
