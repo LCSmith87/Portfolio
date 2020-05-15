@@ -13,6 +13,8 @@ export default MainView
 
 const Main = styled.main`
 
+    transition: background-color 0.5s;
+
     background-color: ${({ theme }) => theme.bg};
     height: 100vh;
     @media (min-width: 640px) {

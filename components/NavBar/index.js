@@ -12,12 +12,8 @@ const NavBar = ({ handleToggle }) => {
                     </div>
                  </div>
                 <ImageWrapper>
-                    <div>
-                        <Image src='/img/linkedin.png' alt="LinkedIn Icon" />
-                    </div>
-                    <div>
-                        <Image src='/img/github.png' alt="GitHub Icon" />
-                    </div>
+                    <a href="https://www.linkedin.com/in/levicodysmith/" ><Image src='/img/linkedin.png' alt="LinkedIn Icon" /></a>
+                    <a href="https://github.com/LCSmith87/"><Image src='/img/github.png' alt="GitHub Icon" /></a>
                 </ImageWrapper>
 
             </Nav>
@@ -52,8 +48,8 @@ const Image = styled.img`
 const ImageWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    padding-bottom: 15px;
     @media (min-width: 640px) {
         flex-direction: column;
+        padding-bottom: 15px;
     }
 `
